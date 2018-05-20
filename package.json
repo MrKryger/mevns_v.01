@@ -1,0 +1,46 @@
+{
+  "name": "mevn_v0.1",
+  "version": "0.1.0",
+  "description": "vue, socket, node",
+  "main": "services/index.js",
+  "scripts": {
+    "test": "standard",
+    "start": "nodemon -i services"
+  },
+  "keywords": [
+    "mevn"
+  ],
+  "author": "Kryger",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.17.3",
+    "standard": "^11.0.1"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@BudgetManager": "./services/BudgetManagerAPI",
+    "@BudgetManagerModels": "./services/BudgetManagerAPI/app/models",
+    "@BudgetManagerAPI": "./services/BudgetManagerAPI/config/app.js",
+    "@config": "./services/BudgetManagerAPI/config/index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "flash": "^1.1.0",
+    "node-uuid": "^1.4.8",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.3",
+    "server": "^1.0.18",
+    "bcrypt": "^1.0.3",
+    "consign": "^0.1.6",
+    "cors": "^2.8.4",
+    "jsonwebtoken": "^8.1.0",
+    "module-alias": "^2.0.1",
+    "mongoose": "^4.12.2",
+    "morgan": "^1.9.0",
+    "passport-jwt": "^3.0.0"
+  }
+}
